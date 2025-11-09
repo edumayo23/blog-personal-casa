@@ -1,23 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Blog de Rodrigo Tufiño</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Blog de Elian Rodríguez</title>
+  <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="estudios.html">Estudios</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h1>Contacto</h1>
-    </main>
-    
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="estudios.html">Estudios</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="proyectos.html">Proyectos</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main class="contacto-container">
+    <section class="contacto-header">
+      <h1>Contacto</h1>
+      <p>¿Tienes una idea, proyecto o simplemente quieres saludar? <br> ¡Envíame un mensaje y te responderé pronto!</p>
+    </section>
+
+    <section class="contacto-form">
+      <form action="#" method="post">
+        <div class="input-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+        </div>
+
+        <div class="input-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required />
+        </div>
+
+        <div class="input-group">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" name="asunto" placeholder="Motivo del mensaje" required />
+        </div>
+
+        <div class="input-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar mensaje</button>
+      </form>
+    </section>
+
+    <section class="contacto-info">
+      <h2>También puedes contactarme en:</h2>
+      <ul>
+        <li>📧 <a href="mailto:edumayo_23@hotmail.com">edumayo_23@hotmail.com</a></li>
+        <li>📞 <a href="tel:+593963916818">+593 96 391 6818</a></li>
+        <li>📍 Quito, Ecuador</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+  <p>© 2025 Elian Rodríguez | Diseñado y desarrollado con HTML y CSS</p>
+  <p>Contacto: <a href="mailto:edumayo_23@hotmail.com">edumayo_23@hotmail.com</a> | 
+     Instagram: <a href="https://instagram.com/elianrodriguez" target="_blank">@elianrodriguez</a></p>
+</footer>
 </body>
 </html>
