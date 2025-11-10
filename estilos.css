@@ -908,4 +908,17 @@ body, html {
     }
 }
 
+/* Diseño responsivo */
+@media (max-width: 768px){
+    /* Colocando las tarjetas una debajo de otra */
+    .tarjetas{
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Cada tarjeta ocupa el 80% del espacio disponible */
+    .tarjeta{
+        width: 80%;
+    }
+}
+
 /* Fin de estilos.css */
